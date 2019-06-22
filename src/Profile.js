@@ -12,7 +12,8 @@ class Profile extends Component {
     let following = `${userdata.homeURL}/following`;
     let repos = `${userdata.homeURL}/repositories`;
 
-    if(userdata.message === "Not Found"){
+     if(userdata.notFound === "Not Found") //When user is not found then message "Not Found" is store in "notFound" atribute of userdata
+     {
       return(
         <div className="notfound">
           <h2>Heyyyyy</h2>
